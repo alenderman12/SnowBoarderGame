@@ -7,6 +7,7 @@ public class Dash : MonoBehaviour
     [SerializeField] private float dashForce;
     [SerializeField] private float dashDuration;
     [SerializeField] private float dashCooldown;
+    [SerializeField] private ParticleController particleController;
     private Rigidbody2D rb;
     private bool canUse = true;
     private void Start()
@@ -17,6 +18,7 @@ public class Dash : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z) && canUse)
         {
+            particleController.PlayParticle("DashParticles");
             StartCoroutine(DashCo());
         }
     }
@@ -33,5 +35,10 @@ public class Dash : MonoBehaviour
     {
         yield return new WaitForSeconds(dashCooldown);
         canUse = true;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        particleController.StopParticle("DashParticle");
     }
 }

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f0a5e77a77ae90449a21c19da9e9435c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Retro Vintage
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 93c6f84761c1c6d45b5e03e67d5f5333, type: 3}
+  - {fileID: 12800000, guid: 4f66b823198fbdd43b0d3c57105ae49a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
