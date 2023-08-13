@@ -11,6 +11,6 @@ public class LoseMechanic : MonoBehaviour
     }
     private void ReloadScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
